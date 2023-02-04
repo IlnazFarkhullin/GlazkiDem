@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlazkiSave", "GlazkiSave\GlazkiSave.csproj", "{8ED3FD49-3178-4003-8D7F-0F7F516A9D1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ED3FD49-3178-4003-8D7F-0F7F516A9D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED3FD49-3178-4003-8D7F-0F7F516A9D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED3FD49-3178-4003-8D7F-0F7F516A9D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED3FD49-3178-4003-8D7F-0F7F516A9D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1275A7A-C99E-4772-8F80-F589B5BAFB72}
+	EndGlobalSection
+EndGlobal

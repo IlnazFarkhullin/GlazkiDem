@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="01eefda214cd432a9111b7822560b7ef" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopSaveModel.Agent" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.AgentPriorityHistory" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.AgentType" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.Material" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.MaterialCountHistory" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.MaterialType" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.Product" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.ProductCostHistory" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.ProductMaterial" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.ProductSale" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.ProductType" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.Shop" Width="1.5" PointX="5.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopSaveModel.Supplier" Width="1.5" PointX="5.25" PointY="13.625" IsExpanded="true" />
+        <AssociationConnector Association="ShopSaveModel.FK_Agent_AgentType" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_AgentPriorityHistory_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_ProductSale_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_Shop_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_MaterialCountHistory_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_ProductMaterial_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_ProductCostHistory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_ProductMaterial_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopSaveModel.MaterialSupplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
