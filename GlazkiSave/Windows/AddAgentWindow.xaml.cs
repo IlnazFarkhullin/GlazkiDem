@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.IO;
 using GlazkiSave.Classes;
 using GlazkiSave.DataBaseModel;
+using System.Windows.Navigation;
 
 namespace GlazkiSave.Windows
 {
@@ -48,6 +49,13 @@ namespace GlazkiSave.Windows
 
         private void AddAgentBtn_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(TitleTxt.Text) || AgentTypeCmb.SelectedItem == null || string.IsNullOrEmpty(AddressTxt.Text) || string.IsNullOrEmpty(INNTxt.Text) || string.IsNullOrEmpty(KPPTxt.Text) || string.IsNullOrEmpty(DirectorNameTxt.Text) || string.IsNullOrEmpty(PhoneTxt.Text) || string.IsNullOrEmpty(EmailTxt.Text) || string.IsNullOrEmpty(PriorTxt.Text))
+            {
+                MessageBox.Show("Пожалуйста заполните все поля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+
             var a = AgentTypeCmb.SelectedItem as AgentType;
             Agent agent = new Agent()
             {
@@ -65,6 +73,9 @@ namespace GlazkiSave.Windows
             ConnectingClass.connecting.Agent.Add(agent);
             ConnectingClass.connecting.SaveChanges();
             MessageBox.Show("Запись добавлена");
+            }
         }
+
+        
     }
 }

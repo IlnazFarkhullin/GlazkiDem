@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,21 +14,30 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GlazkiSave.Classes;
 using GlazkiSave.DataBaseModel;
-using GlazkiSave.Windows;
-using GlazkiSave.Pages;
 
-
-namespace GlazkiSave
+namespace GlazkiSave.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для EditPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditPage : Page
     {
-        public MainWindow()
+        Agent agent;
+        public EditPage(Agent agents)
         {
             InitializeComponent();
-            FrMain.NavigationService.Navigate(new MainPage());
-        }  
+            agent = agents;
+            this.DataContext= agent;
+        }
+
+        private void LogoBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
